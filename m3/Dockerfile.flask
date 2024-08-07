@@ -20,7 +20,7 @@ RUN echo "Current directory is: $(pwd)"
 RUN echo "Files in the current directory:" && ls -l
 
 # Set environment variable for Flask
-ENV FLASK_APP=app.py
+ENV FLASK_APP=m3/app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 
 # Make port 5000 available to the world outside this container
