@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'm3/**'
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   build-and-run:
