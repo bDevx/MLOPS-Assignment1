@@ -3,7 +3,7 @@ name: Model Training and Evaluation
 on:
   push:
     paths:
-      - 'm1/**'
+      - 'mx/**'
 
 jobs:
   build:
