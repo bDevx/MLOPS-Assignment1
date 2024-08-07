@@ -2,8 +2,8 @@ name: Build and Run Docker Containers
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - 'm3/**'
 
 jobs:
   build-and-run:
