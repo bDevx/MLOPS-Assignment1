@@ -22,8 +22,8 @@ jobs:
         sudo chmod +x /usr/local/bin/docker-compose
         docker-compose --version  # Verify Docker Compose installation
 
-    - name: Build Docker images
-      run: docker-compose build
+    - name: Build Docker images 
+      run: docker-compose build --verbose
 
     - name: Start Docker containers
       run: docker-compose up -d
