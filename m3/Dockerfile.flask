@@ -13,6 +13,12 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code to the container at /app
 COPY . /app
 
+# Print the current directory path
+RUN echo "Current directory is: $(pwd)"
+
+# List the files in the current directory
+RUN echo "Files in the current directory:" && ls -l
+
 # Set environment variable for Flask
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
